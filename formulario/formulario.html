@@ -4,84 +4,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="estilo" href="estilo.css">
+    <link rel="stylesheet" href="estilo.css">
     <title>Formulario</title>
 </head>
 
 <body>
-    <div>
+
+    <!--DATOS PERSONALES-->
+    <from action="#" method="post">
         <fieldset>
             <legend>Datos personales</legend>
-            <from>
-                <div>
+            <div class="informacion-personal">
+
+                <div class="left-column">
                     <label for="name">D.N.I:</label>
-                    <input type="text" id="name" name="user_dni" />
-                </div>
-                <div>
+                    <input type="text" id="dni" size="10" name="dni" /><br><br>
                     <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="user_dni" />
+                    <input type="text" id="nombre" size="40" name="nombre" /><br><br>
+                    <label for="name">Apellidos:</label>
+                    <input type="text" id="apellidos" size="60" name="apellido" /><br><br>
                 </div>
-                <div>
-                    <label for="name">Apellido</label>
-                    <input type="text" id="name" name="user_dni" />
+
+                <div class="right-column">
+                    <label for="name">Sexo:</label><br><br>
+                    <div>
+                        <input type="radio" id="hombre" name="hombre" />
+                        <label for="hombre">Hombre</label><br><br>
+                    </div>
+                    <div>
+                        <input type="radio" id="mujer" name="mujer" />
+                        <label for="mujer">Mujer</label>
+                    </div>
                 </div>
-                <div>
-                    <label for="name">Sexo:</label>
-                    <input type="radio" id="name" name="user_dni" />
-                    <label for="name">Hombre</label>
-                    <input type="radio" id="name" name="user_dni" />
-                    <label for="name">Mujer</label>
-                </div>
-            </from>
+            </div>
         </fieldset>
-    </div>
-    <div>
+
+        <!--DIRECCIÓN-->
         <fieldset>
             <legend>Dirección</legend>
-            <from>
+            <div class="left">
                 <div>
-                    <label for="name">Calle/Avda:</label>
-                    <input type="text" id="name" name="user_dni" />
+
+                    <label for="calle">Calle/Avda:</label>
+                    <input type="text" id="calle" size="60" name="calle" /><br><br>
                 </div>
-                <div>
-                    <label for="name">Población</label>
-                    <input type="text" id="name" name="user_dni" />
+
+                <div class="right">
+                    <div>
+                        <label for="poblacion">Población</label>
+                        <input type="text" id="poblacion" size="40" name="poblacion" /><br><br>
+                    </div>
+        
+                    <div>
+                        <label for="provincia">Provincia:</label>
+                        <select>
+                            <option value="value1">Almería</option>
+                            <option value="value2">Granada</option>
+                            <option value="value3">Málaga</option>
+                            <option value="value4">Sevilla</option>
+                        </select>
+                    </div>
                 </div>
-                <div>
-                    <label for="name">Provincia:</label>
-                    <select>
-                        <option value="value1">Almería</option>
-                        <option value="value2">Granada</option>
-                        <option value="value3">Málaga</option>
-                        <option value="value4">Sevilla</option>
-                    </select>
-                </div>
-            </from>
+            </div>
         </fieldset>
-    </div>
-    <div>
+
+        <!--PRÁCTICA EN GRUPO-->
         <fieldset>
             <legend>Práctica en grupo</legend>
-            <from>
+
+            <div>
+                <label for="archivo">Archivo:</label>
+                <input type="text" id="archivo" size="70" name="archivo" />
+    
+                <input hidden id="btn" class="form-control text-center col-md-6"
+                    onChange="document.getElementById('tagsmall').innerText=document.getElementById('btn').files[0]['name'];"
+                    type="file" value="Archivo">
+                <button id='personalizado' onClick="document.getElementById('btn').click();">Browse</button>
+                <small id='tagsmall'></small>
                 <div>
-                    <label for="name">Archivo:</label>
-                    <input type="text" id="name" name="user_dni" />
-                    <input type="submit" value="Browse..." />
-                    <input type="checkbox" id="name" name="user_dni" />
-                    <label for="name">Archivo comprimido</label>
-                    <input type="checkbox" id="name" name="user_dni" />
-                    <label for="name">Archivo encriptado</label>
+
+                    <input type="checkbox" id="comprimido" name="comprimido" />
+                    <label for="comprimido">Archivo comprimido</label>
+        
+                    <input type="checkbox" id="encriptado" name="encriptado" />
+                    <label for="encriptado">Archivo encriptado</label><br><br>
                 </div>
-                <div>
-                    <label for="name">Descripción de la páctica</label>
-                </div>
-                <textarea name="comentarios" rows="10" cols="40"></textarea>
-                <p>
-                    <input type="submit" value="Submit Query" />
-                </p>
-            </from>
+            </div>
+
+            <legend for="descripcion">Descripción de la páctica</legend><br>
+            <textarea name="descripcion" rows="10" cols="40"></textarea>
         </fieldset>
-    </div>
+        <p>
+            <input class="boton" type="submit" value="Submit Query" />
+        </p>
+    </from>
+
 </body>
 
 </html>

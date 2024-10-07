@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosAlhambra.css">
+    <title>Alhambra</title>
+</head>
+
+<body>
+    <h1>La Alhambra de Granada</h1>
+    <hr>
+    <img class="imagenAlhambra" src="alhambra-foto.jpg" alt="Imagen de la Alhambra">
+    <hr>
+    <nav>
+        <a href="inicioAlhambra.html#">Inicio</a>
+        <a href="historiaAlhambra.html#historiaAlhambra">Historia</a>
+        <a href="contactar.html#contactar">Contactar con nuestra asociación</a>
+        <a href="enlaces.html#enlaces">Enlaces Externos</a>
+        <a href="horarios.html#horarios">Horarios</a>
+    </nav>
+    <hr>
+    <h2>Formulario para contactar con nosotros:</h2>
+    <script type="text/javascript" src="archivo.js"></script>
+    <from action="#" method="post">
+        <div>
+            <div>
+                <label for="name">Nombre:</label>
+                <input type="text" id="nombre" size="10" name="nombre" /><br><br>
+                <label for="name">Apellidos:</label>
+                <input type="text" id="Apellido" size="10" name="Apellido" /><br><br>
+                <label for="name">Email:</label>
+                <input type="text" id="Email" size="10" name="Email" /><br><br>
+                <input type="radio" id="hombre" name="hombre" />
+                <label for="hombre">Hombre</label><br><br>
+                <input type="radio" id="mujer" name="mujer" />
+                <label for="mujer">Mujer</label><br>
+            </div>
+            <div>
+                <label for="provincia">Procedencia:</label>
+                <select>
+                    <option value="value1">Almería</option>
+                    <option value="value2">Granada</option>
+                    <option value="value3">Málaga</option>
+                    <option value="value4">Sevilla</option>
+                </select>
+            </div>
+            <div>
+                <legend for="descripcion">Descripción de la páctica</legend><br>
+                <textarea name="descripcion" rows="10" cols="40"></textarea>
+
+            </div>
+            <div>
+                <input hidden id="btn" class="form-control text-center col-md-6"
+                    onChange="document.getElementById('tagsmall').innerText=document.getElementById('btn').files[0]['name'];"
+                    type="file" value="Archivo">
+                <button id='personalizado' onClick="document.getElementById('btn').click();">Seleccionar archivo</button>
+            </div>
+            <p>
+                <input class="boton" type="submit" value="Enviar" />
+                <input class="boton" type="submit" value="Borrar los datos" />
+            </p>
+        </div>
+    </from>
+</body>
+
+</html>

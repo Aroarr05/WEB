@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas y Enlaces</title>
+    <script type="module" src="./index.js"></script>
+    <style>
+        h1{
+            text-align: center;
+        }
+        #final{
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        iframe{
+            text-align: center;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <h1>TABLAS Y ENLACES</h1>
+    <hr>
+    <ul>
+        <li>Esta web consta de dos enlaces dentro de la tabla siguiente:
+            <ul>
+                <li>Página web de nuestro instituto: <a href="https://iesbelen.org" target="_blank">iesbelen.org</a></li>
+                <li>Enlace al final de esta web con una marca de texto</li>
+            </ul>
+        </li>
+    </ul>
+    <!--Tabla-->
+    <table border="1">
+        <tr>
+            <th>ENLACES</th>
+            <th>IMAGEN</th>
+        </tr>
+        <tr>
+            <td><a href="https://iesbelen.org" target="_blank">IES BELÉN</a></td>
+            <td rowspan="2">
+                <img src="Captura de pantalla 2024-10-01 095748.png" alt="IMAGEN">
+            </td>
+        </tr>
+        <tr>
+            <td><a href="#final">Final de esta página</a></td>
+        </tr>
+    </table>
+    
+    <!--Mapa-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3199.124723427227!2d-4.459761523629805!3d36.69554067359123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f9dee2ea3131%3A0xe00a7d745fb8b2e3!2sIES%20Bel%C3%A9n!5e0!3m2!1ses!2ses!4v1727766925883!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    <gmp-map
+      center="37.4220656,-122.0840897"
+      zoom="10"
+      map-id="DEMO_MAP_ID"
+      style="height: 400px"
+    ></gmp-map>
+    
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=beta"
+      defer
+    ></script>
+
+    <hr>
+
+    <p id="final"><strong>FINAL</strong></p>
+
+    <hr>
+
+</body>
+</html>

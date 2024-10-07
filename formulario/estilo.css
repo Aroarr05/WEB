@@ -1,11 +1,61 @@
-.from{
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    width: 50%;
+}
+
+form {
+    width: 600px;
     margin: 0 auto;
-    width: 400px;
-    padding: 1em;
+    padding: 20px;
+    border-radius: 5px;
 }
-.div{
-    border: 1px solid #000; 
+
+fieldset {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #aaa;
 }
-ul{
-    list-style: none;
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*Posición del botón*/
+.boton{
+    margin-left: 40%;
+}
+
+/*Datos personales*/
+.informacion-personal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column {
+    width: 60%;
+}
+
+.right-column {
+    width: 35%;
+}
+
+.right-column label {
+    width: auto;
+}
+/*Dirección*/
+.left{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.right{
+display: flex;
+
 }
