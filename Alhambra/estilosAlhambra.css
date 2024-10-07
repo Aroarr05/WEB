@@ -2,3 +2,16 @@
     width: 1100px;
     height:400px;
 }
+select{
+  width: 180px;
+}
+.fuente{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large ;
+    font-weight: 600;
+}
+.textoCentrado{
+    margin-left: 390px;
+    margin-bottom: 0px;
+}
+

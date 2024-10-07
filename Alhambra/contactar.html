@@ -16,8 +16,8 @@
     <nav>
         <a href="inicioAlhambra.html#">Inicio</a>
         <a href="historiaAlhambra.html#historiaAlhambra">Historia</a>
-        <a href="contactar.html#contactar">Contactar con nuestra asociación</a>
         <a href="enlaces.html#enlaces">Enlaces Externos</a>
+        <a href="contactar.html#contactar">Contactar con nuestra asociación</a>
         <a href="horarios.html#horarios">Horarios</a>
     </nav>
     <hr>
@@ -33,34 +33,39 @@
                 <label for="name">Email:</label>
                 <input type="text" id="Email" size="10" name="Email" /><br><br>
                 <input type="radio" id="hombre" name="hombre" />
-                <label for="hombre">Hombre</label><br><br>
+                <label for="hombre">Hombre</label><br>
                 <input type="radio" id="mujer" name="mujer" />
-                <label for="mujer">Mujer</label><br>
+                <label for="mujer">Mujer</label><br><br>
             </div>
             <div>
-                <label for="provincia">Procedencia:</label>
+                <legend for="descripcion">Ingresa aquí tu mensaje:</legend>
+                <textarea name="descripcion" rows="10" cols="40">...Tus mensajes aquí...</textarea>
+            </div>
+            <div>
+                <input type="checkbox" id="publicidad" name="publicidad" />
+                <label for="publicidad">Deseo recibir publicidad futura en mi direciión de email.</label><br><br>
+            </div>
+            <div>
+                <label for="procedencia">Procedencia:</label>
                 <select>
-                    <option value="value1">Almería</option>
+                    <option value="value1">España</option>
                     <option value="value2">Granada</option>
                     <option value="value3">Málaga</option>
                     <option value="value4">Sevilla</option>
-                </select>
+                </select><br><br>
             </div>
             <div>
-                <legend for="descripcion">Descripción de la páctica</legend><br>
-                <textarea name="descripcion" rows="10" cols="40"></textarea>
-
-            </div>
-            <div>
+                <label for="text">Ingresa un archivo que quieras adjuntar: </label>
                 <input hidden id="btn" class="form-control text-center col-md-6"
                     onChange="document.getElementById('tagsmall').innerText=document.getElementById('btn').files[0]['name'];"
                     type="file" value="Archivo">
-                <button id='personalizado' onClick="document.getElementById('btn').click();">Seleccionar archivo</button>
+                <button id='personalizado' onClick="document.getElementById('btn').click();">Seleccionar archivo</button><br><br>
             </div>
-            <p>
-                <input class="boton" type="submit" value="Enviar" />
-                <input class="boton" type="submit" value="Borrar los datos" />
-            </p>
+            <di>
+                <button><b>Enviar</b></button>
+                <button><b><u>Borrar</u> los datos</b></button>
+            </di>
+           
         </div>
     </from>
 </body>
