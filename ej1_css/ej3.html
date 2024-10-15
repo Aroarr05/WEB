@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,35 +12,44 @@
 
         h2 {
             color: red;
-            border-bottom: 3px solid red;
+            border-bottom: 6px solid red;
             padding-bottom: 5px;
         }
 
         .form-container {
-            border: 2px dashed red;
-            padding: 5px;
+            border-style: dashed;
+            border-width: 3px;
+            border-color: red;
+            padding: 10px;
             width: 300px;
-            margin-top: 20px;
-        }
-        label {
-            color: red;   
-            
+            border-bottom: none;
+            position: relative;
         }
 
-        input[type="text"], input[type="password"], textarea {
-            width: 60%;
+        label {
+            color: red;
+            margin-bottom: 5px;
+            vertical-align: middle; 
+        }
+
+        input[type="text"],
+        input[type="password"],
+        textarea {
             align-items: center;
-            
+            width: 200px;
+            vertical-align: middle; 
             margin-top: 5px;
             border: 1px dashed red;
         }
 
-        .checkbox-group, .radio-group {
+        .checkbox-group,
+        .radio-group {
             margin: 10px 0;
             display: flex;
         }
 
-        .checkbox-group label, .radio-group label {
+        .checkbox-group label,
+        .radio-group label {
             display: inline-block;
         }
 
@@ -54,14 +64,27 @@
             margin-right: 5px;
             cursor: pointer;
         }
-        .centrar1{
-            margin-top: 40px;
+
+        .centrar1 {
+            margin-top: 50px;
         }
-        .centrar2{
-            margin-top: 10px;
+
+        .centrar2 {
+            margin-top: 15px;
+        }
+
+        .form-container::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: red;
         }
     </style>
 </head>
+
 <body>
 
     <h2>Estilos CSS para formularios</h2>
@@ -69,20 +92,21 @@
     <div class="form-container">
         <form action="#" method="POST">
             <div style="margin-left: center;">
-                <label for="login">Login:</label>
+                <label style="margin-right: 42px;" for="login">Login:</label>
                 <input type="text" id="login" size="10" name="login">
-    
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password">
-    
+
+                <label style="margin-right: 12px;vertical-align: middle" for="password">Password:</label>
+                <input type="password" id="password" size="10" name="password">
+
                 <label for="descripcion">Descripción:</label>
-                <textarea id="descripcion" style="color: green;" name="descripcion" rows="2">Contenido inicial...</textarea>
+                <textarea id="descripcion" style="color: green;" name="descripcion"
+                    rows="2">Contenido inicial...</textarea>
             </div>
 
             <div class="checkbox-group">
                 <label class="centrar1">Posesiones:</label>
                 <div>
-                    <input type="checkbox" id="casa" size="10" name="posesiones" value="casa">
+                    <input type="checkbox" id="casa" name="posesiones" value="casa">
                     <label for="casa">Casa</label><br>
                     <input type="checkbox" id="ordenador" name="posesiones" value="ordenador">
                     <label for="ordenador">Ordenador</label><br>
@@ -113,4 +137,5 @@
     </div>
 
 </body>
+
 </html>
