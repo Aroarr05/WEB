@@ -1,0 +1,22 @@
+/* Estilos iniciales del contenedor */
+.contenedor {
+    width: 180px;
+    height: 180px;
+    background-color: #e74c3c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    transition: 
+        transform 0.5s ease; 
+}
+
+/* Efectos al pasar el ratón por encima */
+.contenedor:hover {
+    transform: 
+        scale(1.2) 
+        rotate(20deg) 
+        translate(20px, 20px) 
+        skew(10deg, 5deg); }
