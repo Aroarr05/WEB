@@ -229,3 +229,25 @@ a {
 .centrado {
   text-align: center;
 }
+
+/*-----------------------TOOLTIP-----------------------*/
+.texto-tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(215, 235, 206);
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  left: 50%;
+  bottom: -40px; 
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product:hover .texto-tooltip {
+  visibility: visible;
+  opacity: 1;
+}

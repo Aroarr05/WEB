@@ -1,0 +1,105 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+}
+
+hr {
+    display: none;
+}
+
+.sub-container{
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+    hr {
+        display: block;
+    }
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.ciclos strong {
+    color: black;
+}
+
+li strong {
+    color: rgb(199, 36, 199);
+}
+
+@media (max-width: 600px) {
+    .container {
+        display: block;
+        padding: 10px;
+    }
+    li {
+        flex-direction: column;
+        display: flex;
+    }
+    .sub-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    .container {
+        gap: 20px;
+    }
+    .sub-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .section:nth-child(1) {
+        grid-column: 1; 
+    }
+    .section:nth-child(2),
+    .section:nth-child(3) {
+        grid-column: 2; 
+    }
+    .ciclos ul {
+        list-style: none;
+    }
+    .estudiar strong {
+        text-decoration: underline;
+    }
+    .ciclos li{
+        flex-direction: column;
+        display: flex;
+    }
+    .estudiar strong{
+        text-decoration: underline;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .container {
+        gap: 20px;
+        padding: 20px;
+    }
+    li{
+        margin-left: 20px;
+    }
+}
