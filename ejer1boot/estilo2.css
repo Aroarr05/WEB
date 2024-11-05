@@ -1,0 +1,30 @@
+.row > div{
+    padding: 30px;
+}
+.header{
+    background: rgb(11, 4, 109);
+}
+.header h1{
+    color: white;
+}
+.header p{
+    color: white;
+}
+.aside{
+    background: rgb(57, 201, 236);
+}
+.aside h2{
+    color: white;
+}
+.aside p{
+    color: white;
+}
+.footer{
+    background: maroon;
+}
+.footer h2{
+    color:white;
+}
+.footer p{
+    color: white;
+}
