@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Artículo 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="bg-gray-50">
+    <!-- Barra de navegación -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <img src="./assets/logo.png" alt="Logo" class="h-10">
+        </div>
+    </nav>
+
+    <!-- Contenido del artículo -->
+    <main class="container mx-auto p-6 grid md:grid-cols-3 gap-6">
+        <article class="md:col-span-2">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">Título del Artículo 1</h1>
+            <p class="text-gray-600">Este es el contenido completo del artículo 1...</p>
+        </article>
+        <aside>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Otros Artículos</h2>
+            <a href="articulo2.html" class="block bg-white rounded-lg shadow-md hover:shadow-xl transition mb-4">
+                <img src="./assets/img2.jpg" alt="Artículo 2" class="rounded-t-lg">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Título del Artículo 2</h3>
+                </div>
+            </a>
+            <a href="articulo3.html" class="block bg-white rounded-lg shadow-md hover:shadow-xl transition">
+                <img src="./assets/img3.jpg" alt="Artículo 3" class="rounded-t-lg">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Título del Artículo 3</h3>
+                </div>
+            </a>
+        </aside>
+    </main>
+
+    <!-- Lista de comentarios -->
+    <section class="container mx-auto p-6">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Comentarios</h2>
+        <ul>
+            <li class="bg-white p-4 rounded-lg shadow-md mb-4">
+                <p class="text-gray-600">Comentario 1...</p>
+            </li>
+            <li class="bg-white p-4 rounded-lg shadow-md">
+                <p class="text-gray-600">Comentario 2...</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-10">
+        <div class="container mx-auto py-6">
+            <img src="./assets/logo.png" alt="Logo" class="h-12 mx-auto">
+        </div>
+    </footer>
 </body>
 </html>
