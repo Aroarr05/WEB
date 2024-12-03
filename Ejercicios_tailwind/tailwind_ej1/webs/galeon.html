@@ -1,11 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Artículo 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+
+<body class="bg-gray-50">
+
+    <!-- Barra de navegación -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <!-- Logo -->
+            <img src="./assets/logo.png" alt="logo" class="h-10">
+
+            <!-- Botón de Menú (Responsive) -->
+            <button id="menu-button" class="lg:hidden text-gray-600 focus:outline-none" aria-expanded="false" aria-controls="navbar">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+
+            <!-- Enlaces de Navegación -->
+            <ul id="navbar" class="hidden lg:flex lg:space-x-4">
+                <li><a href="#" class="text-gray-600 hover:text-gray-800 py-2 px-4">Inicio</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-gray-800 py-2 px-4">Sobre nosotros</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-gray-800 py-2 px-4">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido del artículo -->
+    <main class="container mx-auto p-6 grid md:grid-cols-3 gap-6">
+        <!-- Artículo principal -->
+        <article class="md:col-span-2">
+            <h1 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Galeón</h1>
+            <p class="text-gray-600 leading-relaxed">
+                Para una tripulación compuesta de tres a cuatro personas requerirá de este tipo de barco para poder zarpar al mar.
+            </p>
+        </article>
+
+        <!-- Barra lateral -->
+        <aside>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Otros Barcos</h2>
+            <!-- Balandro -->
+            <a href="./balandro.html" class="block bg-white rounded-lg shadow-md hover:shadow-xl transition mb-4">
+                <img src="./assets/balandro.webp" alt="Balandro" class="rounded-t-lg">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Balandro</h3>
+                </div>
+            </a>
+            <!-- Bergantín -->
+            <a href="./bergantin.html" class="block bg-white rounded-lg shadow-md hover:shadow-xl transition">
+                <img src="./assets/bergantin.jpg" alt="Bergantín" class="rounded-t-lg">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Bergantín</h3>
+                </div>
+            </a>
+        </aside>
+    </main>
+
+    <!-- Lista de comentarios -->
+    <section class="container mx-auto p-6">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Comentarios</h2>
+        <ul>
+            <li class="bg-white p-4 rounded-lg shadow-md mb-4">
+                <p class="text-gray-600">Comentario 1...</p>
+            </li>
+            <li class="bg-white p-4 rounded-lg shadow-md">
+                <p class="text-gray-600">Comentario 2...</p>
+            </li>
+        </ul>
+    </section>
+
+   <!-- Footer -->
+   <footer class="bg-gray-800 text-white mt-10">
+    <div class="container mx-auto py-6 text-center">
+        <img src="./assets/logo.png" alt="Logo" class="h-12 mx-auto mb-4">
+        <p class="text-sm">
+            &copy; 2024 Sea of Thieves. Todos los derechos reservados.
+        </p>
+    </div>
+</footer>
+
 </body>
+
 </html>
