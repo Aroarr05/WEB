@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Gradientes y Fondos Responsivos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <header class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-2xl font-bold">Mi Página Web</h1>
+            <ul class="flex space-x-6">
+                <li>
+                    <a href="#" class="hover:underline hover:font-bold hover:text-gray-200 transition duration-300">Inicio</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline hover:font-bold hover:text-gray-200 transition duration-300">Servicios</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline hover:font-bold hover:text-gray-200 transition duration-300">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="text-center py-16 bg-cover bg-center transition-all duration-500 md:bg-[url('https://www.aquateknica.com/wp-content/uploads/2021/09/arcoiris.png')] bg-[url('https://c.files.bbci.co.uk/16C69/production/_116298239_body.jpg')]">
+        <h2 class="text-4xl font-bold mb-4 text-white drop-shadow-md">Bienvenido a nuestra página</h2>
+        <p class="text-lg mb-6 text-white drop-shadow-md">
+            Explora nuestros servicios y descubre cómo podemos ayudarte a alcanzar tus objetivos
+        </p>
+        <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded transition transform hover:scale-105">
+            Comienza ahora
+        </button>
+    </section>
+
+    <section class="container mx-auto my-12 text-center">
+        <h2 class="text-3xl font-bold mb-8">Nuestros Servicios</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-6 bg-blue-200 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105">
+                <h3 class="text-xl font-bold mb-2">Diseño Web</h3>
+                <p class="text-gray-700">Creamos sitios web modernos y funcionales adaptados a tus necesidades.</p>
+            </div>
+            <div class="p-6 bg-blue-200 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105">
+                <h3 class="text-xl font-bold mb-2">Marketing Digital</h3>
+                <p class="text-gray-700">Te ayudamos a llegar a más clientes mediante estrategias de marketing digital.</p>
+            </div>
+            <div class="p-6 bg-blue-200 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105">
+                <h3 class="text-xl font-bold mb-2">Consultoría</h3>
+                <p class="text-gray-700">Ofrecemos asesoría personalizada para tu negocio o proyecto.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto my-12">
+        <h2 class="text-3xl font-bold mb-8 text-center">Mira nuestro video</h2>
+        <div class="relative w-full" style="padding-bottom: 56.25%;"> <!-- 16:9 ratio -->
+            <iframe 
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/aAkMkVFwAoo"
+                title="Video responsive"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+   
+
+    <footer class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white text-center py-6">
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

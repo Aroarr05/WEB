@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/estilos.css">
     <title>Heladeria</title>
 </head>
+
 <body>
     <!----HEADER---->
     <header>
         <div class="logo">
-            <img src="/imgenes/logo/logo-sin-fondo.png" alt="logo de la heladeria" />
+            <img src="/Heladeria/imgenes/logo/logo-sin-fondo.png" alt="logo de la heladeria" />
             <h1>Nombre</h1>
         </div>
         <nav>
@@ -19,91 +21,89 @@
             <a href="registro.html#">Registro</a>
         </nav>
     </header>
-     <!--DATOS PERSONALES-->
-     <from action="#" method="post">
-   
-        <h2 class="titulos">Datos personales</h2>
-            <div class="informacion-personal">
-                <div class="left-column">
-                    <label for="name">D.N.I:</label>
-                    <input type="text" id="dni" size="10" name="dni" /><br><br>
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="nombre" size="40" name="nombre" /><br><br>
-                    <label for="name">Apellidos:</label>
-                    <input type="text" id="apellidos" size="60" name="apellido" /><br><br>
-                </div>
+    <!--DATOS PERSONALES-->
+    <from action="#" method="post" style="margin-left: 100px;">
 
-                <div class="right-column">
-                    <label for="name">Sexo:</label><br><br>
-                    <div>
-                        <input type="radio" id="hombre" name="hombre" />
-                        <label for="hombre">Hombre</label><br><br>
-                    </div>
-                    <div>
-                        <input type="radio" id="mujer" name="mujer" />
-                        <label for="mujer">Mujer</label>
-                    </div>
+        <h2 class="titulos">Datos personales</h2>
+        <div class="informacion-personal">
+            <div class="left-column">
+                <label for="name">D.N.I:</label>
+                <input type="text" id="dni" size="10" name="dni" /><br><br>
+                <label for="name">Nombre:</label>
+                <input type="text" id="nombre" size="40" name="nombre" /><br><br>
+                <label for="name">Apellidos:</label>
+                <input type="text" id="apellidos" size="60" name="apellido" /><br><br>
+            </div>
+
+            <div class="right-column">
+                <label for="name">Sexo:</label><br><br>
+                <div>
+                    <input type="radio" id="hombre" name="hombre" />
+                    <label for="hombre">Hombre</label><br><br>
+                </div>
+                <div>
+                    <input type="radio" id="mujer" name="mujer" />
+                    <label for="mujer">Mujer</label>
                 </div>
             </div>
-    
+        </div>
+
 
         <!--DIRECCIÓN-->
-      
-            <h2 class="titulos">Dirección</h2>
-            <div class="left">
+
+        <h2 class="titulos">Dirección</h2>
+        <div class="left">
+            <div>
+
+                <label for="calle">Calle/Avda:</label>
+                <input type="text" id="calle" size="60" name="calle" /><br><br>
+            </div>
+
+            <div class="right">
                 <div>
-
-                    <label for="calle">Calle/Avda:</label>
-                    <input type="text" id="calle" size="60" name="calle" /><br><br>
+                    <label for="poblacion">Población</label>
+                    <input type="text" id="poblacion" size="40" name="poblacion" /><br><br>
                 </div>
 
-                <div class="right">
-                    <div>
-                        <label for="poblacion">Población</label>
-                        <input type="text" id="poblacion" size="40" name="poblacion" /><br><br>
-                    </div>
-        
-                    <div>
-                        <label for="provincia">Provincia:</label>
-                        <select>
-                            <option value="value1">Almería</option>
-                            <option value="value2">Granada</option>
-                            <option value="value3">Málaga</option>
-                            <option value="value4">Sevilla</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-    
-
-    
-    <!----FOOTER---->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-row">
-                <div class="footer-links">
-                    <h4>Ayuda</h4>
-                    <ul>
-                        <li><a href="#">Preguntas Frecuentes</a></li>
-                        <li><a href="#">Atención Al cliente</a></li>
-                        <li><a href="#">Politica De Privicidad</a></li>
-                        <li><a href="#">Condiciones De La Web</a></li>
-                        <li><a href="#">Politica De Cookies</a></li>
-                    </ul>
-                </div>
-                <div class="social-links">
-                    <h4>Redes Sociales</h4>
-                    <div>
-                        <a href="https://twitter.com"><img src="/imgenes/iconos/gorjeo.png"></a>
-                        <a href="https://www.tiktok.com"><img src="/imgenes/iconos/tik-tok.png"></a>
-                        <a href="https://www.instagram.com"><img src="/imgenes/iconos/instagram.png"></a>
-                    </div>
+                <div>
+                    <label for="provincia">Provincia:</label>
+                    <select>
+                        <option value="value1">Almería</option>
+                        <option value="value2">Granada</option>
+                        <option value="value3">Málaga</option>
+                        <option value="value4">Sevilla</option>
+                    </select>
                 </div>
             </div>
         </div>
-        <div class="centrado">
-            <samp class="copyright">&copy; 2024 AROA RIVAS RIOS</samp>
-        </div>
-    </footer>
+        <!----FOOTER---->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-row">
+                    <div class="footer-links">
+                        <h4>Ayuda</h4>
+                        <ul>
+                            <li><a href="#">Preguntas Frecuentes</a></li>
+                            <li><a href="#">Atención Al cliente</a></li>
+                            <li><a href="#">Politica De Privicidad</a></li>
+                            <li><a href="#">Condiciones De La Web</a></li>
+                            <li><a href="#">Politica De Cookies</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-links">
+                        <h4>Redes Sociales</h4>
+                        <div>
+                            <a href="https://twitter.com"><img src="/Heladeria/imgenes/iconos/gorjeo.png"></a>
+                            <a href="https://www.tiktok.com"><img src="/Heladeria/imgenes/iconos/tik-tok.png"></a>
+                            <a href="https://www.tiktok.com"><img src="/Heladeria/imgenes/iconos/instagram.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="centrado">
+                <samp class="copyright">&copy; 2024 AROA RIVAS RIOS</samp>
+            </div>
+        </footer>
 </body>
+
 </html>
