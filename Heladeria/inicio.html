@@ -1,63 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Heladería con los mejores sabores y postres artesanales.">
     <link rel="stylesheet" href="estilos/estilos.css">
-    <title>Heladeria</title>
+    <title>Heladería</title>
 </head>
 
 <body>
-    <!----HEADER---->
+    <!-- HEADER -->
     <header>
         <div class="logo">
-            <img src="./imgenes/logo/logo-sin-fondo.png" alt="logo de la heladeria" />
-            <h1>Nombre</h1>
+            <img src="./imagenes/logo/logo-sin-fondo.png" alt="Logotipo de la Heladería" width="100" height="100">
+            <h1>Nombre de la Heladería</h1>
         </div>
-        <nav>
-            <a href="inicio.html#">Inicio</a>
-            <a href="html/productos.html">Producto</a>
-            <a href="html/registro.html">Registro</a>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="inicio.html" aria-label="Ir a la página de inicio">Inicio</a></li>
+                <li><a href="html/productos.html" aria-label="Ver nuestros productos">Productos</a></li>
+                <li><a href="html/registro.html" aria-label="Registro de usuario">Registro</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!--INFORMACIÓN-->
-    <div class="contenedor-gradado">
-        ¡Este contenedor tiene un DEGRADADO!
-    </div>
+    <!-- INFORMACIÓN -->
+    <main>
+        <section class="contenedor-gradado">
+            <h2>Sobre nosotros</h2>
+            <p>¡Este contenedor tiene un degradado y ofrece información sobre nuestra heladería!</p>
+        </section>
 
-    <!--Video-->
-    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=gWVE0qFlXD8"
-        title="YouTube video de como se hacen helados" frameborder="0" allow="accelerometer; autoplay;
-   clipboard-write; encrypted-media; gyroscope;picture-picture" allowfullscreen></iframe>
+        <!-- Video -->
+        <section>
+            <h2>¿Cómo se hacen los helados?</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gWVE0qFlXD8"
+                title="Video de YouTube sobre cómo se hacen los helados" frameborder="0" allowfullscreen
+                aria-label="Video informativo sobre la fabricación de helados">
+            </iframe>
+        </section>
+    </main>
 
-    <!----FOOTER---->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer-row">
                 <div class="footer-links">
                     <h4>Ayuda</h4>
                     <ul>
-                        <li><a href="#">Preguntas Frecuentes</a></li>
-                        <li><a href="#">Atención Al cliente</a></li>
-                        <li><a href="#">Politica De Privicidad</a></li>
-                        <li><a href="#">Condiciones De La Web</a></li>
-                        <li><a href="#">Politica De Cookies</a></li>
+                        <li><a href="#" aria-label="Preguntas frecuentes">Preguntas Frecuentes</a></li>
+                        <li><a href="#" aria-label="Atención al cliente">Atención al Cliente</a></li>
+                        <li><a href="#" aria-label="Política de privacidad">Política de Privacidad</a></li>
+                        <li><a href="#" aria-label="Condiciones de uso del sitio web">Condiciones de la Web</a></li>
+                        <li><a href="#" aria-label="Política de cookies">Política de Cookies</a></li>
                     </ul>
                 </div>
                 <div class="social-links">
                     <h4>Redes Sociales</h4>
                     <div>
-                        <a href="https://twitter.com"><img src="./imgenes/iconos/gorjeo.png"></a>
-                        <a href="https://www.tiktok.com"><img src="./imgenes/iconos/tik-tok.png"></a>
-                        <a href="https://www.tiktok.com"><img src="./imgenes/iconos/instagram.png"></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" 
+                           title="Síguenos en Twitter">
+                            <img src="./imagenes/iconos/gorjeo.png" alt="Ícono de Twitter">
+                        </a>
+                        <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" 
+                           title="Síguenos en TikTok">
+                            <img src="./imagenes/iconos/tik-tok.png" alt="Ícono de TikTok">
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" 
+                           title="Síguenos en Instagram">
+                            <img src="./imagenes/iconos/instagram.png" alt="Ícono de Instagram">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="centrado">
-            <samp class="copyright">&copy; 2024 AROA RIVAS RIOS</samp>
+            <span class="copyright">&copy; 2024 AROA RIVAS RÍOS</span>
         </div>
     </footer>
 </body>

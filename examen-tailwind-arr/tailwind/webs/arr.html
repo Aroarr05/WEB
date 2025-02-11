@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen 1Trimestre</title>
+  <link rel="stylesheet" href="./output.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-cover bg-center bg-[url('fondo.jpg')] font-montserrat min-h-screen flex flex-col">
+
+  <header class="flex justify-between items-center p-4 bg-gradient-to-r from-azulado to-morado">
+    <div class="logo">
+      <img src="barco.jpg" class="w-24 h-24 rounded-full transform transition-transform duration-300 hover:scale-110" alt="Logo">
+    </div>
+    <nav class="hidden md:flex space-x-6 text-yellow-400">
+      <a href="arr.html" class="hover:text-white">Inicio</a>
+      <a href="servicios.html" class="hover:text-white">Servicios</a>
+      <a href="contacto.html" class="hover:text-white">Contacto</a>
+    </nav>
+  
+    <div class="block md:hidden text-yellow-400">
+      <span class="material-icons">Menu</span>
+    </div>
+  </header>
+
+  <main class="text-center py-10 px-4 flex-grow">
+    <section class="hero">
+      <h1 class="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-azulado to-morado mb-4">
+        Bienvenidos a Nuestra Web
+      </h1>
+      <p class="text-xl text-gray-800 mb-6">Texto introductorio sobre los servicios y beneficios de la web.</p>
+      <button class="bg-white text-black py-2 px-4 rounded transition-transform transform hover:scale-105 hover:bg-azulado">
+        Más Información
+      </button>
+    </section>
+
+    <section class="search-section flex justify-center items-center mt-8">
+      <input type="text" placeholder="Buscar..." class="border border-morado p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-azulado hover:bg-azulado hover:text-white transition-all">
+      <button class="search-btn ml-3 bg-transparent border border-morado text-morado py-2 px-4 rounded transition-transform hover:scale-110 hover:bg-morado hover:text-white">
+        🔍
+      </button>
+    </section>
+  </main>
+
+  <footer class="bg-gradient-to-r from-azulado to-morado text-yellow-400 text-center py-4">
+    <div class="flex justify-center space-x-8">
+      <a href="#" class="hover:text-white">Política de Privacidad</a>
+      <a href="#" class="hover:text-white">Términos de Uso</a>
+    </div>
+  </footer>
+
+</body>
+</html>

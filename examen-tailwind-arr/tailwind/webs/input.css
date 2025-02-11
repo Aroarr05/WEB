@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .rectangulo {
+    @apply lg:bg-azulado w-60 h-40 grid place-content-center rounded-lg m-2 lg:text-red-500 font-bold lg:text-4xl border-azulado border-spacing-1 pm:bg-morado pm:text-azulado sm:bg-green-300 sm:text-morado pm:text-sm sm:text-2xl pm:border-spacing-7 sm:border-spacing-9;
+  }
+
+  .texto {
+    @apply lg:text-azulado underline font-bold lg:text-4xl pm:text-sm sm:text-2xl pm:text-morado sm:text-green-300;
+  }
+}

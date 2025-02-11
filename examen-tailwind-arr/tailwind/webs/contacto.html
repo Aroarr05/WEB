@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="./output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-montserrat bg-gray-100 h-screen flex flex-col justify-between">
+
+  <header class="bg-gradient-to-r from-azulado to-morado text-yellow-400 p-4 fixed top-0 w-full z-10">
+    <div class="flex justify-between items-center">
+      <div class="logo">
+        <img src="barco.jpg" class="w-24 h-24 rounded-full transform transition-transform duration-300 hover:scale-110" alt="Logo">
+      </div>
+      <nav class="hidden md:flex space-x-6">
+        <a href="arr.html" class="hover:text-white">Inicio</a>
+        <a href="servicios.html" class="hover:text-white">Servicios</a>
+        <a href="contacto.html" class="hover:text-white">Contacto</a>
+      </nav>
+
+      <div class="block md:hidden text-yellow-400">
+        <span class="material-icons">Menu</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow mt-24 flex justify-center items-center px-4 py-10">
+    <div class="flex flex-col md:flex-row bg-white shadow-lg rounded-l-lg overflow-hidden w-full max-w-4xl">
+
+      <div class="w-full md:w-1/2 bg-morado text-white p-10 flex flex-col justify-center items-center text-center">
+        <img src="barco.jpg" class="w-48 h-48 rounded-full transform transition-transform duration-300 hover:scale-110 mb-6" alt="Barco">
+        <h1 class="text-3xl font-bold">Súbete a nuestro barco</h1>
+        <p class="mt-4 text-lg">Solo debería tomar un par de minutos emparejarse con tu reloj.</p>
+      </div>
+
+      <div class="w-full md:w-1/2 p-10">
+        <form class="space-y-6 flex flex-col">
+          <div class="flex items-center mb-4">
+            <label for="nombre" class="block text-xl font-semibold mr-4 w-full md:w-1/3">Nombre</label>
+            <input type="text" id="nombre" name="nombre" class="w-full md:w-2/3 p-3 border border-gray-300 rounded-lg" required>
+          </div>
+
+          <div class="flex items-center mb-4">
+            <label for="sexo" class="block text-xl font-semibold mr-4 w-full md:w-1/3">Sexo</label>
+            <div class="flex items-center w-full md:w-2/3">
+              <label for="macho" class="mr-4">Masculino</label>
+              <input type="checkbox" id="macho" name="sexo" value="masculino">
+              <label for="femenino" class="mr-4 ml-4">Femenino</label>
+              <input type="checkbox" id="femenino" name="sexo" value="femenino">
+            </div>
+          </div>
+
+          <div class="flex items-center mb-4">
+            <label for="fecha" class="block text-xl font-semibold mr-4 w-full md:w-1/3">Fecha de Nacimiento</label>
+            <input type="date" id="fecha" name="fecha" class="w-full md:w-2/3 p-3 border border-gray-300 rounded-lg" required>
+          </div>
+
+          <div class="flex items-center mb-4">
+            <label for="email" class="block text-xl font-semibold mr-4 w-full md:w-1/3">Correo</label>
+            <input type="email" id="email" name="email" class="w-full md:w-2/3 p-3 border border-gray-300 rounded-lg" required>
+          </div>
+
+          <div class="flex items-center mb-4">
+            <label for="telefono" class="block text-xl font-semibold mr-4 w-full md:w-1/3">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" class="w-full md:w-2/3 p-3 border border-gray-300 rounded-lg" required>
+          </div>
+
+          <div class="flex justify-center space-x-4">
+            <button type="submit" class="bg-azulado text-white py-2 px-6 rounded hover:bg-morado transition-colors">Enviar</button>
+            <button type="reset" class="bg-morado text-white py-2 px-6 rounded hover:bg-azulado transition-colors">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-gradient-to-r from-azulado to-morado text-yellow-400 text-center py-4 mt-auto">
+    <div class="flex justify-center space-x-8">
+      <a href="#" class="hover:text-white">Política de Privacidad</a>
+      <a href="#" class="hover:text-white">Términos de Uso</a>
+    </div>
+  </footer>
+  
+</body>
+</html>
